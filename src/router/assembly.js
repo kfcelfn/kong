@@ -1,9 +1,8 @@
 import React from 'react'
 
 import loadable from '@/utils/loadable.js'
-// const Home = loadable( () => import('@/pages/home') );
-const Demo = () => <div>demo</div>
+const Error = loadable( () => import('@/pages/404') );
 
 export {
-  Demo,
+  Error,
 }
