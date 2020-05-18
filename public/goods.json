@@ -1,0 +1,190 @@
+{
+  "control": {
+    "starttime": "2019-10-28 23:18:20",
+    "overtype": "1",
+    "endtime": "2020-10-28 23:18:07",
+    "lefttime": 22471351,
+    "righttime": -9151036
+  },
+  "again_can": true,
+  "again_open": true,
+  "user_can_open": true,
+  "user_can_open_num": "10",
+  "user_can_can": true,
+  "user_can_can_num": "10",
+  "islogin": false,
+  "min_price": "1.04",
+  "min_man": 3,
+  "kai_min_price": "0.52",
+  "kai_min_man": 3,
+  "shop_list": {
+    "shop_id": "1",
+    "shop_name": "来客推",
+    "shop_logo": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1569722748579.png",
+    "quantity_on_sale": 22,
+    "quantity_sold": 271,
+    "collection_num": 32
+  },
+  "collection_id": "",
+  "detail": {
+    "attr_id": "166",
+    "product_id": "83",
+    "group_level": {
+      "3": "2~1"
+    },
+    "g_status": "2",
+    "pro_name": "美迪惠尔 MEDIHEAL潘士力柔滑保湿面膜",
+    "content": "",
+    "status": "2",
+    "imgurl": "1554370022813.png",
+    "activity_no": "257",
+    "num": "105",
+    "image": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1554370022813.png",
+    "market_price": "52.00",
+    "kaiprice": "0.52",
+    "groupnum": 3,
+    "freight": "10",
+    "freight_name": "包邮，（偏远地区除外）",
+    "buysum": "49",
+    "rule": "",
+    "images": [
+      "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1554370022813.png",
+      "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1554370022813.png"
+    ]
+  },
+  "attrList": [
+    {
+      "attrName": "化妆品净含量",
+      "attrType": "1",
+      "id": "90506c3a54fb9fc4367e80abe60b9a82",
+      "attr": [
+        {
+          "attributeId": "90506c3a54fb9fc4367e80abe60b9a82",
+          "id": "aecb41374a79c680191a7e491cdcbf1a",
+          "attributeValue": "5片",
+          "enable": true,
+          "select": true,
+          "count": "146",
+          "price": "52.00"
+        },
+        {
+          "attributeId": "90506c3a54fb9fc4367e80abe60b9a82",
+          "id": "50d248d2ee34986cd8526720326549d4",
+          "attributeValue": "10片",
+          "enable": false,
+          "select": false,
+          "count": "105",
+          "price": "98.00"
+        }
+      ],
+      "all": ["5片", "10片"]
+    }
+  ],
+  "skuBeanList": [
+    {
+      "name": "5片",
+      "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1554370022813.png",
+      "cid": "167",
+      "price": "52.00",
+      "count": "146",
+      "unit": "盒",
+      "attributes": [
+        {
+          "attributeId": "90506c3a54fb9fc4367e80abe60b9a82",
+          "attributeValId": "aecb41374a79c680191a7e491cdcbf1a"
+        }
+      ]
+    },
+    {
+      "name": "10片",
+      "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1554370022813.png",
+      "cid": "166",
+      "price": "98.00",
+      "count": "105",
+      "unit": "盒",
+      "attributes": [
+        {
+          "attributeId": "90506c3a54fb9fc4367e80abe60b9a82",
+          "attributeValId": "50d248d2ee34986cd8526720326549d4"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "6",
+      "add_time": "2019-05-30 15:09:50",
+      "content": "木头我现在",
+      "CommentType": "5",
+      "size": "默认",
+      "anonymous": "0",
+      "user_name": "冬瓜",
+      "headimgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1569722181110.jpg",
+      "attribute": "5片",
+      "uid": "user4",
+      "time": "2019-05-30",
+      "images": [
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200191174.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200191462.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200192944.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200193396.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200193164.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200194553.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200195981.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200195447.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200196444.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200414481.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200414478.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200415286.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200416601.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200416683.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200417426.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200417752.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200418960.jpeg"
+        },
+        {
+          "url": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559200419519.jpeg"
+        }
+      ],
+      "reply": ""
+    }
+  ],
+  "groupList": [],
+  "isplug": 0,
+  "product_status": 1,
+  "isshow": 1,
+  "loseEfficacyImg": "http://xiaochengxu.laiketui.com/V2.7/images/loseEfficacy2x.png"
+}

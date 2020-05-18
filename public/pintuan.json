@@ -1,0 +1,53 @@
+{
+  "code": 1,
+  "list": [
+    {
+      "id": "611",
+      "attr_id": "166",
+      "product_id": "83",
+      "g_status": "2",
+      "sum": "51",
+      "image": "1554370022813.png",
+      "market_price": "52.00",
+      "pro_name": "美迪专场",
+      "pro_name1": "美迪惠尔 MEDIHEAL潘士力柔滑保湿面膜",
+      "imageurl": "1554370022813.png",
+      "activity_no": "257",
+      "num": "105",
+      "product_status": 1,
+      "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1554370022813.png",
+      "kaiprice": "0.52",
+      "groupnum": 3,
+      "leftTime": 0,
+      "hour": "00",
+      "mniuate": "00",
+      "second": "00",
+      "min_price": "1.04",
+      "min_man": 3
+    },
+    {
+      "id": "615",
+      "attr_id": "590",
+      "product_id": "286",
+      "g_status": "2",
+      "sum": "10",
+      "image": "1561112179341.jpeg",
+      "market_price": "3200.00",
+      "pro_name": "小米专场",
+      "pro_name1": "小米（ MI）小米电视",
+      "imageurl": "1561112179341.jpeg",
+      "activity_no": "259",
+      "num": "1",
+      "product_status": 1,
+      "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1561112179341.jpeg",
+      "kaiprice": "2240.00",
+      "groupnum": 3,
+      "leftTime": 0,
+      "hour": "00",
+      "mniuate": "00",
+      "second": "00",
+      "min_price": "2560.00",
+      "min_man": 3
+    }
+  ]
+}

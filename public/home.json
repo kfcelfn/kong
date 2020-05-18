@@ -1,0 +1,264 @@
+{
+  "code": 200,
+  "data": {
+    "logo": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1562152010784.png",
+    "banner": [
+      {
+        "id": "48",
+        "image": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1562208147388.png",
+        "url": "/pages/goods/goods?cid=1",
+        "type": "navigate",
+        "parameter": "1"
+      },
+      {
+        "id": "21",
+        "image": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1562208107398.png",
+        "url": "/pages/goods/goodsDetailed?productId=19",
+        "type": "navigate",
+        "parameter": "19"
+      },
+      {
+        "id": "54",
+        "image": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1562208088226.png",
+        "url": "/pages/goods/goodsDetailed?productId=253",
+        "type": "navigate",
+        "parameter": "253"
+      },
+      {
+        "id": "24",
+        "image": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1562208132615.png",
+        "url": "/pages/goods/goods?cid=2",
+        "type": "navigate",
+        "parameter": "2"
+      }
+    ],
+    "goods_list": [
+      {
+        "id": "266",
+        "product_title": "FANTASTIC PLANET怪诞星球折叠储物箱",
+        "subtitle": "FANTASTIC PLANET怪诞星球折叠储物箱",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1561108757640.jpeg",
+        "volume": "5",
+        "price": "68.00",
+        "yprice": "98.00"
+      },
+      {
+        "id": "265",
+        "product_title": "DEEP立体帆布收纳袋 DEEP立体帆布收纳袋",
+        "subtitle": "DEEP立体帆布收纳袋",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/156110863049.jpeg",
+        "volume": "40",
+        "price": "1.00",
+        "yprice": "1.00"
+      },
+      {
+        "id": "264",
+        "product_title": "自然堂 CHANDO男士喜马拉雅龙血能量爽肤水",
+        "subtitle": "自然堂 CHANDO男士喜马拉雅龙血能量爽肤水",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1561108471703.jpeg",
+        "volume": "10",
+        "price": "125.00",
+        "yprice": "189.00"
+      },
+      {
+        "id": "258",
+        "product_title": "Timberland轻奢侈小包",
+        "subtitle": "123",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1560930743726.png",
+        "volume": "0",
+        "price": "50.00",
+        "yprice": "100.00"
+      },
+      {
+        "id": "253",
+        "product_title": "COMBACK CITY CAMOFLAGE系列手提袋 斜跨包",
+        "subtitle": "COMBACK CITY CAMOFLAGE系列手提袋 斜跨包",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1560930743726.png",
+        "volume": "76",
+        "price": "87.00",
+        "yprice": "125.00"
+      },
+      {
+        "id": "252",
+        "product_title": "极简小坐墩",
+        "subtitle": "",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1560926453150.png",
+        "volume": "0",
+        "price": "200.00",
+        "yprice": "300.00"
+      },
+      {
+        "id": "251",
+        "product_title": "极简小板凳",
+        "subtitle": "",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/15609263261000.png",
+        "volume": "5",
+        "price": "14.00",
+        "yprice": "60.00"
+      },
+      {
+        "id": "240",
+        "product_title": "Dickies纯棉多袋工装短裤",
+        "subtitle": "Dickies纯棉多袋工装短裤",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1560842306228.jpeg",
+        "volume": "0",
+        "price": "78.45",
+        "yprice": "89.00"
+      },
+      {
+        "id": "239",
+        "product_title": "DC NOT ME AGAIN SS M TEES KNFH短袖 T恤",
+        "subtitle": "DC NOT ME AGAIN SS M TEES KNFH短袖 T恤",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1560842142649.jpeg",
+        "volume": "7",
+        "price": "38.00",
+        "yprice": "58.00"
+      },
+      {
+        "id": "238",
+        "product_title": "CHOCOOLATE字母印花休闲短裤",
+        "subtitle": "CHOCOOLATE字母印花休闲短裤",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1560841944348.jpeg",
+        "volume": "1",
+        "price": "68.00",
+        "yprice": "125.00"
+      },
+      {
+        "id": "236",
+        "product_title": "CHOCOOLATE印花拉链休闲裤",
+        "subtitle": "CHOCOOLATE印花拉链休闲裤  CHOCOOLATE印花拉链休闲裤",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1560831248454.jpeg",
+        "volume": "5",
+        "price": "54.00",
+        "yprice": "98.00"
+      },
+      {
+        "id": "233",
+        "product_title": "锐步女款休闲鞋 运动经典 女子经典鞋小白鞋",
+        "subtitle": "锐步女款休闲鞋",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1560759704625.jpeg",
+        "volume": "8",
+        "price": "158.00",
+        "yprice": "345.00"
+      },
+      {
+        "id": "228",
+        "product_title": "阿迪达斯 休闲跑步鞋",
+        "subtitle": "阿迪达斯 休闲跑步鞋",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1560758231746.jpeg",
+        "volume": "5",
+        "price": "398.00",
+        "yprice": "580.00"
+      },
+      {
+        "id": "73",
+        "product_title": "BALENCIAGA 男款老爹鞋复古透气运动鞋",
+        "subtitle": "BALENCIAGA TRIPLE S NUBUCK RESILLE DOUBLE MOUSSE BICOLORE",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/155436672731.png",
+        "volume": "55",
+        "price": "2486.00",
+        "yprice": "5680.00"
+      },
+      {
+        "id": "417",
+        "product_title": "蓬松不扁塌袋鼠洗发水护发素三分钟保湿发膜",
+        "subtitle": "蓬松不扁塌｜美国××××袋鼠洗发水护发素三分钟保湿发膜",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/441970077590.jpg",
+        "volume": "2",
+        "price": "45.00",
+        "yprice": "45.00"
+      },
+      {
+        "id": "416",
+        "product_title": "新款文艺范复古牛皮手提斜跨单肩",
+        "subtitle": "2018新款文艺范复古牛皮小方包箱形手提斜跨单肩百搭真皮个性女包",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/5495747445970.SS2",
+        "volume": "11",
+        "price": "298.00",
+        "yprice": "298.00"
+      },
+      {
+        "id": "411",
+        "product_title": "网纱拼接2019新款t恤女短袖方领修身上衣",
+        "subtitle": "MQueen网纱拼接2019新款t恤女短袖方领修身上衣设计感超仙女8632",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/5914202059380.jpg",
+        "volume": "1",
+        "price": "69.00",
+        "yprice": "69.00"
+      },
+      {
+        "id": "410",
+        "product_title": "假两件针织连衣裙女复古冷淡风秋装打底裙子",
+        "subtitle": "RUIWANG假两件针织连衣裙女复古冷淡风chic秋装打底气质初恋裙子",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/5765826100290.jpg",
+        "volume": "0",
+        "price": "239.00",
+        "yprice": "239.00"
+      },
+      {
+        "id": "409",
+        "product_title": "WCS02136茉莉雅集显瘦遮肉收腰衬衫",
+        "subtitle": "WCS02136茉莉雅集显瘦遮肉才是硬道理油画质地三醋酸收腰衬衫",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/6000292030420.jpg",
+        "volume": "0",
+        "price": "265.00",
+        "yprice": "265.00"
+      },
+      {
+        "id": "408",
+        "product_title": "创意家居生活用品百货实用生日礼物",
+        "subtitle": "创意家居生活用品百货实用大学新生开学必备生日礼物送男女生闺蜜",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/5549061027280.jpg",
+        "volume": "0",
+        "price": "57.60",
+        "yprice": "73.60"
+      }
+    ],
+    "plugin_list": [
+      {
+        "name": "拼团",
+        "appimg": "/images/1_03.png",
+        "url": "../../pagesA/group/group",
+        "status": false
+      },
+      {
+        "name": "签到",
+        "appimg": "/images/1_05.png",
+        "url": "../../pagesA/shop/sign",
+        "status": false
+      },
+      {
+        "name": "优惠券",
+        "appimg": "/images/1_07.png",
+
+        "url": "../../pagesA/shop/coupon",
+        "status": false
+      },
+      {
+        "name": "砍价",
+        "appimg": "/images/1_09.png",
+
+        "url": "../../pagesA/bargain/bargain?topTabBar=true",
+        "status": false
+      },
+      {
+        "name": "竞拍",
+        "appimg": "/images/1_11.png",
+
+        "url": "../../pagesA/bidding/bidding",
+        "status": false
+      },
+      {
+        "name": "秒杀",
+        "appimg": "/images/1_13.png",
+
+        "url": "../../pagesB/seckill/seckill",
+        "status": false
+      }
+    ],
+    "sign_status": 1,
+    "is_sign_status": 1,
+    "xxnum": 0
+  },
+  "message": "操作成功"
+}
