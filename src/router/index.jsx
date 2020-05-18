@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Demo } from './assembly';
+import { Error } from './assembly';
 
 import '@/utils/rem'
 import '@/index.less';
@@ -11,7 +11,7 @@ export default class Router extends Component {
     return (
       <BrowserRouter>
         <Switch> 
-          <Route path='/demo' component={Demo}/>     
+          <Route path='/404' component={Error}/>     
         </Switch>
       </BrowserRouter>
     )
