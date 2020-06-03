@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>React App</title>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React App</title>
+  </head>
 
-<body>
-<div id="root"></div>
-</body>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
+<script>
+
+// 类， 也叫构造器
+function Person(){
+  // this就是我们实例
+  //{}.name = 'tiezhu'
+  this.name = 'tiezhu'
+  //{ name: 'tiezhu' }
+  console.log(this)
+}
+// 1、创建空对象 {}
+// 2、执行构造器 Person 把this 指向与 {}
+// 3、给对象添加属性
+// 4、 返回当前的实例
+new Person()
+
+
+
+
+
+
+
+</script>
