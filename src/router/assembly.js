@@ -1,9 +1,9 @@
 import loadable from '@/utils/loadable.js'
 
 const Error = loadable( () => import('@/pages/404') );
-const Home = loadable( () => import('@/pages/home') );
+const Hook = loadable( () => import('@/pages/hook') );
 
 export {
   Error,
-  Home,
+  Hook
 }
