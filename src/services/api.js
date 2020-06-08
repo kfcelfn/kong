@@ -1,3 +1,3 @@
 export default {
-  // goods: '/goods.json',
+  getuser: 'https://api.baxiaobu.com/index.php/home/v5/getuser',
 }
