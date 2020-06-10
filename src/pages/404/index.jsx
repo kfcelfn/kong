@@ -8,6 +8,7 @@ export default class Error extends Component {
         404
         叶铁柱1
         也铁柱2
+        也铁柱3
       </div>
     )
   }
