@@ -1,5 +1,5 @@
-import getReduxData from '@/reducer/getReduxData'
+import home from '@/reducer/home'
 
 export {
-  getReduxData
+  home
 }

@@ -1,12 +1,10 @@
-
- 
 const defaultState = {
   data: [],
 }
  
 export default function home (state = defaultState, action) {
   switch (action.type) {
-    case 'GETDATA':
+    case 'HOME_GET_USER':
       return {
         ...state, 
         data: action.payload.users

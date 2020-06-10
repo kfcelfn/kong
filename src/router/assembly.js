@@ -1,13 +1,11 @@
 import loadable from '@/utils/loadable.js'
 
 const Error = loadable(() => import('@/pages/404'));
-const Hook = loadable(() => import('@/pages/hook'));
-const Effects = loadable(() => import('@/pages/effect'));
-const Redux = loadable(() => import('@/pages/getReduxData'));
+const Login = loadable(() => import('@/pages/login'));
+const Home = loadable(() => import('@/pages/home'));
 
 export {
   Error,
-  Hook,
-  Effects,
-  Redux,
+  Login,
+  Home,
 }
