@@ -12,6 +12,7 @@ export default class Error extends Component {
         叶勇志1
         叶勇志2
         叶勇志3
+        叶勇志4
       </div>
     )
   }
