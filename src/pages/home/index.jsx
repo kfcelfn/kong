@@ -1,13 +1,30 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Table, Space, Modal, Form, Input, message } from 'antd';
+import { Button, Space, message } from 'antd';
 import { connect } from 'react-redux';
 import { getData, insertUser, deleteUser, updateUser } from '@/action/home'
+import { Navs, Tables, Modals } from '@@'
+import './styles.less'
 
-const Home = props => {
+// 侧边导航栏数据
+const navList = [
+  {
+    title: 'Form',
+    key: 'form',
+    path: '/form'
+  },
+  {
+    title: 'List',
+    key:'list',
+    path: '/list'
+  },
+]
+
+function Home (props) {
   const { datas, getData, insertUser, deleteUser, updateUser } = props
 
   const [visible, setVisible] = useState(false)
   const [titleFlag, setTitleFlag] = useState(null)
+  const [editData, seteditData] = useState({})
 
   const columns = [
     {
@@ -35,7 +52,8 @@ const Home = props => {
         </Space>
       ),
     },
-  ];
+  ] 
+
   // 初始化数据
   useEffect(() => {
     getData()
@@ -44,12 +62,13 @@ const Home = props => {
   const insertBefore = () => {
     setVisible(true)
     setTitleFlag(null)
+    seteditData({})
   }
   //编辑前
   const editBefore = text => {
     setVisible(true)
     setTitleFlag(text.id)
-    
+    seteditData({...text})
   }
   //删除
   const deleteUserFn = async text => {
@@ -62,16 +81,13 @@ const Home = props => {
       message.error('删除失败');
     }
   }
-  //保存
+  // 保存
   const onCreate = async values => {
     if (!titleFlag) {
       const res = await insertUser(values)
       
       if (res.payload.status == 200) {
         message.success('添加成功');
-        getData()
-      } else {
-        message.error('添加失败');
       }
     } else {
       values.id = titleFlag
@@ -79,95 +95,36 @@ const Home = props => {
 
       if (res.payload.status == 200) {
         message.success('修改成功');
-        getData()
-      } else {
-        message.error('修改失败');
       }
     }
+    getData()
     setVisible(false);
   };
 
-  interface Values {
-    title: string;
-    description: string;
-    modifier: string;
-  }
-  
-  interface CollectionCreateFormProps {
-    visible: boolean;
-    onCreate: (values: Values) => void;
-    onCancel: () => void;
-  }
-  
-  const CollectionCreateForm: React.FC<CollectionCreateFormProps> = ({
-    visible,
-    onCreate,
-    onCancel,
-  }) => {
-    const [form] = Form.useForm();
-
-    return (
-      <Modal
-        visible={visible}
-        title={!titleFlag ? '添加' : '修改'}
-        okText="保存"
-        cancelText="取消"
-        onCancel={onCancel}
-        onOk={() => {
-          form
-            .validateFields()
-            .then(values => {
-              form.resetFields();
-              onCreate(values);
-            })
-            .catch(info => {
-              console.log('Validate Failed:', info);
-            });
-        }}
-      >
-        <Form
-          form={form}
-          layout="vertical"
-          name="form_in_modal"
-          initialValues={{ modifier: 'public' }}
-        >
-          <Form.Item
-            name="name"
-            label="名字"
-            rules={[{ required: true, message: 'Please input the title of collection!' }]}
-          >
-            <Input />
-          </Form.Item>
-          <Form.Item 
-            name="age" 
-            label="年龄"
-            rules={[{ required: true, message: 'Please input the title of collection!' }]}
-          >
-            <Input type="textarea" />
-          </Form.Item>
-        </Form>
-      </Modal>
-    );
-  };
-  
   return (
     <div className='pages-home'>
-      <p><Button type="primary" onClick={insertBefore}>添加</Button></p>
+      <Navs navList={navList} />
 
-      <Table columns={columns} dataSource={datas} rowKey="id"/>
+      <div className='main'>
+        <p><Button type="primary" onClick={insertBefore}>添加</Button></p>
 
-      <CollectionCreateForm
-        visible={visible}
-        onCreate={onCreate}
-        onCancel={() => setVisible(false) }
-      />
+        <Tables datas={datas} columns={columns} />
+
+        <Modals 
+          visible={visible}  //显示、隐藏
+          onCancel={() => {setVisible(false)}}  //取消模态框
+          onCreate={onCreate} //保存
+          titleFlag={titleFlag} //title标题文字
+          editData={editData}
+        />
+      </div>
     </div>
   )
 }
 
-export default connect(state => {
+export default connect(({ home }) => {
   return{
-    datas: state.home.data
+    datas: home.data
   }
 }, {
   getData,

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Form, Input, Button, message } from 'antd';
 import { post } from '@/utils/request'
 import api from '@/services/api'
@@ -11,14 +11,17 @@ const tailLayout = {
   wrapperCol: { offset: 8, span: 16 },
 };
 
-export default function Login() {
+export default function Login () {
+  const initialValues = {
+    remember: true
+  }
 
   const onFinish = async values => {
     const res = await post(api.loginUser, values)
 
     if (res.status == 200) {
-      message.success('登录成功');
-      window.location.href = '/';
+      message.success('登录成功')
+      window.location.href = '/'
     }else{
       message.error('账户或密码错误');
     }
@@ -33,7 +36,7 @@ export default function Login() {
       <Form
         {...layout}
         name="basic"
-        initialValues={{ remember: true }}
+        initialValues={initialValues}
         onFinish={ onFinish }
         onFinishFailed={ onFinishFailed }
       >
@@ -60,5 +63,5 @@ export default function Login() {
         </Form.Item>
       </Form>
     </div>
-  );
+  )
 }
