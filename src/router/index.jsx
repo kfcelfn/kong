@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Error, Hook } from './assembly';
+import { Error, Home } from './assembly';
+
+import '@/utils/rem'
+import '@/index.less';
+import '@/utils/reset.css'  
 
 export default class Router extends Component {
   render() {
@@ -8,7 +12,7 @@ export default class Router extends Component {
       <BrowserRouter>
         <Switch> 
           <Route path='/404' component={Error}/>     
-          <Route path='/' component={Hook}/>     
+          <Route path='/' component={Home}/>     
         </Switch>
       </BrowserRouter>
     )
