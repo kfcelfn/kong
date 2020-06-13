@@ -2,6 +2,8 @@ import * as TYPE from '@/constants/actionTypes'
 
 const defaultState = {
   data: [],
+  listData: [],
+  count: 0
 }
  
 export default function home (state = defaultState, action) {
@@ -10,6 +12,12 @@ export default function home (state = defaultState, action) {
       return {
         ...state, 
         data: action.payload.users
+      }
+    case TYPE.LIST_LISTWITHPAGE:
+      return {
+        ...state, 
+        listData: action.payload.result.list,
+        count: action.payload.result.count
       }
  
     default:

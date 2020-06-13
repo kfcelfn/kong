@@ -29,3 +29,10 @@ export const deleteUser = option => {
     payload: post(api.deleteUser, option) 
   }
 }
+//下拉加载
+export const listWithPage = option => {
+  return{
+    type: TYPE.LIST_LISTWITHPAGE, 
+    payload: post(api.listWithPage, option) 
+  }
+}

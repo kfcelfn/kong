@@ -6,4 +6,5 @@ export default {
   addUser: url + 'v5/add',
   deleteUser: url + 'v5/deleteUser',
   updateUser: url + 'v5/updateUser',
+  listWithPage: 'https://blogs.zdldove.top/Home/Apis/listWithPage'
 }

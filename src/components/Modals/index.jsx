@@ -27,7 +27,8 @@ export default function Home (props) {
     useEffect(() => {
       form.setFieldsValue({
         name: editData.name,
-        age: editData.age
+        age: editData.age,
+        address: editData.address
       })
     })
     
@@ -66,6 +67,13 @@ export default function Home (props) {
           <Form.Item 
             name="age" 
             label="年龄"
+            rules={[{ required: true, message: 'Please input the title of collection!' }]}
+          >
+            <Input type="textarea" />
+          </Form.Item>
+          <Form.Item 
+            name="address" 
+            label="Address"
             rules={[{ required: true, message: 'Please input the title of collection!' }]}
           >
             <Input type="textarea" />
