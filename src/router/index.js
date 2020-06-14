@@ -11,6 +11,7 @@ const routes = [
       { path: '/home', component: type.Home, },
       { path: '/echart', component: type.Echarts, },
       { path: '/list', component: type.List, },
+      { path: '/demo', component: type.Demo, },
     ]
   },
 ]

@@ -30,7 +30,7 @@ function List (props) {
         initialLoad={false} // 不让它进入直接加载
         pageStart={1} // 设置初始化请求的页数
         loadMore={loadMoreData}  // 监听的ajax请求
-        hasMore={true} // 是否继续监听滚动事件 true 监听 | false 不再监听
+        hasMore={hasMore} // 是否继续监听滚动事件 true 监听 | false 不再监听
         useWindow={false} // 不监听 window 滚动条
       >
         <div className="pages-hoc">

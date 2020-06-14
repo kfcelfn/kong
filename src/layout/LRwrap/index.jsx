@@ -48,7 +48,7 @@ const navList = {
     {
       title: 'Pages',
       key:'pages',
-      path: '/pages'
+      path: '/demo'
     },
     {
       title: 'JS plugins',

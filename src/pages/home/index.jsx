@@ -7,14 +7,13 @@ import './styles.less'
 
 function Home (props) {
   const { datas, getData, insertUser, deleteUser, updateUser } = props
-  const [initData, setInitData] = useState([]);
   const [selectionType] = useState('checkbox');
   const [checkedData, setCheckedData] = useState([])
+  const [selectedRowKey, setSelectedRowKeys] = useState([])
   const [visible, setVisible] = useState(false)
   const [titleFlag, setTitleFlag] = useState(null)
   const [editData, seteditData] = useState({})
-  const [arr, seteArr] = useState([])
- 
+  
   const columns = [
     {
       title: '编号',
@@ -57,20 +56,17 @@ function Home (props) {
   // 初始化数据
   useEffect(() => {
     getData()
-    setInitData(datas)
   }, [])
+  // 公共方法，筛选出你选中的那一条数据。
   const editCount = (opt, record) => {
-    datas.forEach(v => {
-      if (v.id == record.id) v.count = opt
-    })
-    return setInitData(datas)
+    datas.forEach(v => v.id == record.id ? v.count = opt : '')
   }
+  // table复选框
   const rowSelections = {
-    onChange: (_, selectedRows) => {
+    // 回调里把拿到的数据，存放在定义的数组里
+    onChange: (selectedRowKeys, selectedRows) => {
       setCheckedData([...selectedRows])
-      
-      console.log(selectedRows)
-      console.log(checkedData)
+      setSelectedRowKeys([...selectedRowKeys])
     },
     getCheckboxProps: record => ({
       disabled: record.name === 'Disabled User', 
@@ -81,8 +77,9 @@ function Home (props) {
     },
     onSelectAll: selected => {
       selected ? datas.forEach(v => v.count = 1) : datas.forEach(v => v.count = 0)
-      setInitData(datas)
-    }
+    },
+    // selectedRowKeys 选中后存储的数组，动态的把你存的数组赋值给控制复选框的数组
+    selectedRowKeys: selectedRowKey
   }
   let rowSelection = {
     type: selectionType,
@@ -90,18 +87,21 @@ function Home (props) {
   }
   //取消列表选中状态
   const cancalChecked = option => {
-    const arr = checkedData.filter(item => item.id != option.id)
-    setCheckedData([...arr])
+    const arr_01 = checkedData.filter(item => item.id != option.id)
+    const arr_02 = selectedRowKey.filter(item => item != option.id )
+    setCheckedData([...arr_01])
+    setSelectedRowKeys([...arr_02])
+    editCount(0, option)
   }
   const inputBlur = async (event,option) => {
     option.name = event.target.value
     const res = await updateUser(option)
 
     if(res.payload.status == 200) {
-      message.success('修改成功');
+      message.success('修改成功')
+      getData()
     }
-    getData()
-    // console.log(datas)
+    
   }
   //添加前
   const insertBefore = () => {
@@ -143,7 +143,7 @@ function Home (props) {
       }
     }
     getData()
-    setVisible(false);
+    setVisible(false)
   }
 
   return (
@@ -166,7 +166,7 @@ function Home (props) {
         <Tables 
           datas={datas} 
           columns={columns}
-          rowSelections={rowSelection} 
+          rowSelections={rowSelection}
         />
 
         <Modals 

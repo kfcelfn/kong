@@ -30,7 +30,6 @@ const optionData02 = {
     type: 'bar'
   }]
 }
-
 const optionData03 = {
   xAxis: {
     type: 'category',
