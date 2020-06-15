@@ -5,6 +5,17 @@ import { getData, insertUser, deleteUser, updateUser  } from '@/action/home'
 import { Tables, Modals } from '@@'
 import './styles.less'
 
+export default connect(({ home }) => {
+  return{
+    datas: home.data,
+  }
+}, {
+  getData,
+  insertUser,
+  deleteUser,
+  updateUser,
+})(Home)
+
 function Home (props) {
   const { datas, getData, insertUser, deleteUser, updateUser } = props
   const [selectionType] = useState('checkbox');
@@ -63,15 +74,10 @@ function Home (props) {
   }
   // table复选框
   const rowSelections = {
-    // 回调里把拿到的数据，存放在定义的数组里
     onChange: (selectedRowKeys, selectedRows) => {
       setCheckedData([...selectedRows])
       setSelectedRowKeys([...selectedRowKeys])
     },
-    getCheckboxProps: record => ({
-      disabled: record.name === 'Disabled User', 
-      name: record.name,
-    }),
     onSelect: (record, selected) => {
       selected ? editCount(1, record) : editCount(0, record)
     },
@@ -81,7 +87,7 @@ function Home (props) {
     // selectedRowKeys 选中后存储的数组，动态的把你存的数组赋值给控制复选框的数组
     selectedRowKeys: selectedRowKey
   }
-  let rowSelection = {
+  const rowSelection = {
     type: selectionType,
     ...rowSelections,
   }
@@ -100,8 +106,7 @@ function Home (props) {
     if(res.payload.status == 200) {
       message.success('修改成功')
       getData()
-    }
-    
+    }  
   }
   //添加前
   const insertBefore = () => {
@@ -131,16 +136,12 @@ function Home (props) {
     if (!titleFlag) {
       const res = await insertUser(values)
       
-      if (res.payload.status == 200) {
-        message.success('添加成功');
-      }
+      if (res.payload.status == 200) message.success('添加成功')
     } else {
       values.id = titleFlag
       const res = await updateUser(values)
 
-      if (res.payload.status == 200) {
-        message.success('修改成功');
-      }
+      if (res.payload.status == 200) message.success('修改成功')
     }
     getData()
     setVisible(false)
@@ -152,7 +153,15 @@ function Home (props) {
         <p>
           tags: {
             checkedData.map(item => {
-              return <span key={item.id} className='checkedStyle' onClick={() => cancalChecked(item)}>{item.name}</span>
+              return (
+                <span 
+                  key={item.id} 
+                  className='checkedStyle' 
+                  onClick={() => cancalChecked(item)}
+                >
+                  {item.name}
+                </span>
+              )
             })
           }
         </p>
@@ -180,14 +189,3 @@ function Home (props) {
     </div>
   )
 }
-
-export default connect(({ home }) => {
-  return{
-    datas: home.data,
-  }
-}, {
-  getData,
-  insertUser,
-  deleteUser,
-  updateUser,
-})(Home)

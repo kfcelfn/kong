@@ -4,6 +4,15 @@ import InfiniteScroll from 'react-infinite-scroller'
 import { listWithPage } from '@/action/home'
 import './styles.less'
 
+export default connect(({ home }) => {
+  return{
+    data: home.listData,
+    count: home.count
+  }
+}, {
+  listWithPage,
+})(List)
+
 function List (props) {
   const { data, count, listWithPage } =  props
 
@@ -49,12 +58,3 @@ function List (props) {
     </div>
   )
 }
-
-export default connect(({ home }) => {
-  return{
-    data: home.listData,
-    count: home.count
-  }
-}, {
-  listWithPage,
-})(List)

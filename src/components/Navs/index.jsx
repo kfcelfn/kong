@@ -15,6 +15,7 @@ export default  function Sider (props) {
       onClick={handleClick}
       style={{ width: 256 }}
       defaultSelectedKeys={[history.location.pathname]}
+      selectedKeys={[history.location.pathname]}
       mode="inline"
     >
       <h1>{navList.title}</h1>
